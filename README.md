@@ -59,6 +59,8 @@ For testing Text-based command run:
 ```bash
 rosrun turtlebot3_gazebo test_plan.py
 ```
+**For testing different LLM models from Ollama library**
+Change the model name (qwen2.5, llama3.1, mathstral) in environment_** scripts in the utils folder.
 
 ## Setup Informations
 - **OS**: Ubuntu 20.04
