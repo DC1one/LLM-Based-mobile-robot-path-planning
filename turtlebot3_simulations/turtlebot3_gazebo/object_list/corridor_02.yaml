@@ -1,0 +1,61 @@
+# Main corridor dimensions
+main_corridor_length: 10  # Length along Y-axis in meters
+main_corridor_width: 4    # Width along X-axis in meters
+
+# Side corridor dimensions
+side_corridor_width: 18  # Length along X-axis in meters
+side_corridor_length: 4    # Width along Y-axis in meters
+
+objects:
+  - name: "Room_number_plate_101"
+    position: {x: 1.25, y: 2.5, z: 0.0}
+  - name: "Room_number_plate_102"
+    position: {x: -1.25, y: 2.5, z: 0.0}
+  - name: "Room_number_plate_103"
+    position: {x: 1.25, y: 5.0, z: 0.0}
+  - name: "Room_number_plate_104"
+    position: {x: -1.25, y: 5.0, z: 0.0}
+  - name: "Room_number_plate_105"
+    position: {x: 1.25, y: 7.5, z: 0.0}
+  - name: "Room_number_plate_106"
+    position: {x: -1.25, y: 7.5, z: 0.0}
+  - name: "Room_number_plate_107"
+    position: {x: -3.7, y: 10.7, z: 0.0}
+  - name: "Room_number_plate_108"
+    position: {x: -6.6, y: 10.7, z: 0.0}
+  - name: "Room_number_plate_109"
+    position: {x: 3.7, y: 10.7, z: 0.0}
+  - name: "Room_number_plate_110"
+    position: {x: 6.6, y: 10.7, z: 0.0}
+
+  # Windows at the ends of side corridor
+  - name: "Window_1"
+    position: {x: -8.0, y: 11.8, z: 0.0}  # End of the side corridor to the left
+  - name: "Window_2"
+    position: {x: 8.0, y: 11.8, z: 0.0}  # End of the side corridor to the right
+
+  # Walls for the main corridor
+  - name: "Wall_Main_Left"
+    position: {x: -2.0, y: 5.0, z: 0.0}
+    size: {width: 0.1, height: 3.0, length: 10.0}
+  - name: "Wall_Main_Right"
+    position: {x: 2.0, y: 5.0, z: 0.0}
+    size: {width: 0.1, height: 3.0, length: 10.0}
+
+
+  # Walls for the side corridor
+  - name: "Wall_Side_Left"
+    position: {x: -8.8, y: 11.8, z: 0.0}
+    size: {width: 0.1, height: 3.0, length: 4.0}
+  - name: "Wall_Side_Right"
+    position: {x: 8.8, y: 11.8, z: 0.0}
+    size: {width: 0.1, height: 3.0, length: 4.0}
+  - name: "Wall_side_front_1"
+    position: { x: -5.35, y: 9.9, z: 0.0 }
+    size: { width: 7.0, height: 3.0, length: 0.1 }
+  - name: "Wall_side_front_2"
+    position: { x: 5.35, y: 9.9, z: 0.0 }
+    size: { width: 7.0, height: 3.0, length: 0.1 }
+  - name: "Wall_side_Back"
+    position: { x: 0.0, y: 13.75, z: 0.0 }
+    size: { width: 17.7, height: 3.0, length: 0.1 }

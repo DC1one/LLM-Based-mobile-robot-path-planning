@@ -1,0 +1,138 @@
+# Main corridor dimensions
+main_corridor_length: 5.0  # Length along Y-axis in meters
+main_corridor_width: 18.0    # Width along X-axis in meters
+
+# Corridor_01 dimensions
+corridor_01_length: 29.5  # Length along Y-axis in meters
+corridor_01_width: 5.0    # Width along X-axis in meters
+
+# corridor_02 dimensions
+corridor_02_length: 29.5    # Width along Y-axis in meters
+corridor_02_width: 5.0  # Length along X-axis in meters
+
+
+objects:
+  # Corridor_01 Data.
+  - name: "Room_number_plate_101"
+    position: { x: -4.7, y: 3.3, z: 0.0 }
+  - name: "Room_number_plate_102"
+    position: { x: -8.4, y: 2.0, z: 0.0 }
+  - name: "Room_number_plate_103"
+    position: { x: -4.7, y: 7.5, z: 0.0 }
+  - name: "Room_number_plate_104"
+    position: { x: -8.4, y: 6.3, z: 0.0 }
+  - name: "Room_number_plate_105"
+    position: { x: -4.7, y: 12.0, z: 0.0 }
+  - name: "Room_number_plate_106"
+    position: { x: -8.4, y: 10.5, z: 0.0 }
+  - name: "Room_number_plate_107"
+    position: { x: -4.7, y: 16.5, z: 0.0 }
+  - name: "Room_number_plate_108"
+    position: { x: -8.4, y: 15.0, z: 0.0 }
+  - name: "Room_number_plate_109"
+    position: { x: -4.7, y: 20.0, z: 0.0 }
+  - name: "Room_number_plate_110"
+    position: { x: -8.4, y: 19.5, z: 0.0 }
+  - name: "Room_number_plate_111"
+    position: { x: -4.7, y: 24.0, z: 0.0 }
+  - name: "Room_number_plate_112"
+    position: { x: -8.4, y: 23.5, z: 0.0 }
+  - name: "Room_number_plate_113"
+    position: { x: -4.7, y: 27.5, z: 0.0 }
+  - name: "Room_number_plate_114"
+    position: { x: -8.4, y: 27.5, z: 0.0 }
+
+  # Walls for Corridor_01
+  - name: "Wall_Corridor01_Left"
+    position: { x: -9.0, y: 14.75, z: 0.0 }
+    size: { width: 0.1, height: 3.0, length: 29.5 }
+  - name: "Wall_Corridor01_Right"
+    position: { x: -4.0, y: 14.75, z: 0.0 }
+    size: { width: 0.1, height: 3.0, length: 29.5 }
+  - name: "Wall_Corridor01_Back"
+    position: { x: -6.5, y: 29.5, z: 0.0 }
+    size: { width: 5.0, height: 3.0, length: 0.1 }
+
+
+
+  # Corridor_02 Data.
+  - name: "Room_number_plate_201"
+    position: { x: 4.7, y: 3.0, z: 0.0 }
+  - name: "Room_number_plate_202"
+    position: { x: 8.4, y: 2.0, z: 0.0 }
+  - name: "Room_number_plate_203"
+    position: { x: 4.7, y: 6.3, z: 0.0 }
+  - name: "Room_number_plate_204"
+    position: { x: 8.4, y: 5.5, z: 0.0 }
+  - name: "Room_number_plate_205"
+    position: { x: 4.7, y: 9.3, z: 0.0 }
+  - name: "Room_number_plate_206"
+    position: { x: 8.4, y: 8.0, z: 0.0 }
+  - name: "Room_number_plate_207"
+    position: { x: 4.7, y: 12.5, z: 0.0 }
+  - name: "Room_number_plate_208"
+    position: { x: 8.4, y: 12.2, z: 0.0 }
+  - name: "Room_number_plate_209"
+    position: { x: 4.7, y: 16.0, z: 0.0 }
+  - name: "Room_number_plate_210"
+    position: { x: 8.4, y: 14.7, z: 0.0 }
+  - name: "Room_number_plate_211"
+    position: { x: 4.7, y: 19.5, z: 0.0 }
+  - name: "Room_number_plate_212"
+    position: { x: 8.4, y: 18.7, z: 0.0 }
+  - name: "Room_number_plate_213"
+    position: { x: 4.7, y: 22.8, z: 0.0 }
+  - name: "Room_number_plate_214"
+    position: { x: 8.4, y: 21.0, z: 0.0 }
+  - name: "Room_number_plate_215"
+    position: { x: 4.7, y: 25.8, z: 0.0 }
+  - name: "Room_number_plate_216"
+    position: { x: 8.4, y: 25.3, z: 0.0 }
+  - name: "Room_number_plate_217"
+    position: { x: 4.7, y: 28.5, z: 0.0 }
+  - name: "Room_number_plate_218"
+    position: { x: 8.4, y: 27.5, z: 0.0 }
+  # Windows at the ends of corridor_02
+  - name: "Window"
+    position: { x: 6.5, y: 29.0, z: 0.0 }
+
+  # Walls for Corridor_02
+  - name: "Wall_Corridor02_Left"
+    position: { x: 4.0, y: 14.75, z: 0.0 }
+    size: { width: 0.1, height: 3.0, length: 29.5 }
+  - name: "Wall_Corridor02_Right"
+    position: { x: 9.0, y: 14.75, z: 0.0 }
+    size: { width: 0.1, height: 3.0, length: 29.5 }
+  - name: "Wall_Corridor02_Back"
+    position: { x: 6.5, y: 29.5, z: 0.0 }
+    size: { width: 5.0, height: 3.0, length: 0.1 }
+
+
+  # Main_corridor Data.
+  - name: "Main_Entrance"
+    position: { x: 0.0, y: -4.0, z: 0.0 }
+  - name: "Stairs_1"
+    position: { x: -8.0, y: -0.6, z: 0.0 }
+  - name: "Stairs_2"
+    position: { x: 8.0, y: -0.6, z: 0.0 }
+
+  # Walls for Main_corridor
+  - name: "Wall_Main_Left"
+    position: { x: -9.0, y: -2.5, z: 0.0 }
+    size: { width: 0.1, height: 3.0, length: 5.0 }
+  - name: "Wall_Main_Right"
+    position: { x: 9.0, y: -2.5, z: 0.0 }
+    size: { width: 0.1, height: 3.0, length: 5.0 }
+  - name: "Wall_Main_Front"
+    position: { x: 0.0, y: 0.0, z: 0.0 }
+    size: { width: 8.0, height: 3.0, length: 0.1 }
+  - name: "Wall_Main_Back"
+    position: { x: 0.0, y: -5.0, z: 0.0 }
+    size: { width: 18.0, height: 3.0, length: 0.1 }
+
+
+  # Junction points of Corridor_01 and Corridor_02 with Main Corridor
+  - name: "Corridor_1"
+    position: { x: -6.5, y: -0.5, z: 0.0 }
+  - name: "Corridor_2"
+    position: { x: 6.5, y: -0.5, z: 0.0 }

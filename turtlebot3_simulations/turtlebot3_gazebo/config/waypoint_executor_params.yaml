@@ -1,0 +1,16 @@
+# waypoint_executor_params.yaml
+
+# Movement Parameters
+linear_speed: 0.4            # meters per second
+angular_speed: 2.0           # radians per second
+distance_threshold: 0.1      # meters to consider waypoint as reached
+angle_threshold: 0.087       # radians (~5 degrees) for angular alignment
+
+# Obstacle Detection Parameters
+obstacle_angle_range: 0.2618  # radians (~15 degrees) front sector for obstacle detection
+self_obstacle_distance: 0.2   # meters to ignore obstacles too close to robot's center
+critical_distance: 0.35       # meters to trigger emergency stop
+
+# Replanning Parameters
+max_replans: 3                # maximum number of replanning attempts
+replan_cooldown: 2.0          # seconds to wait before attempting to replan again
