@@ -30,25 +30,34 @@ roscore
 ```
 **Launch the Gazebo World**
 ```bash
-roslaunch turtlebot3_gazebo turtlebot3_custom_normal.launch
-roslaunch turtlebot3_gazebo turtlebot3_custom_crowd_static.launch
-roslaunch turtlebot3_gazebo turtlebot3_custom_crowd_dense.launch
+roslaunch turtlebot3_gazebo corridor_01.launch
+roslaunch turtlebot3_gazebo corridor_02.launch
+roslaunch turtlebot3_gazebo corridor_world_building_04.launch
 ```
-**Place the Robot in the World**
+**Start Ollama server**
 ```bash
-roslaunch turtlebot3_gazebo put_robot_in_world_custom.launch
+ollama serve
 ```
-**Simulate Environment**
+**Launch Scripts**
 ```bash
-rosrun turtlebot3_rl_sim simulate_crowd_custom.py
+roslaunch turtlebot3_gazebo corridor_1.launch
+roslaunch turtlebot3_gazebo corridor_2.launch
+roslaunch turtlebot3_gazebo corridor_world_building.launch
 ```
-**Train Models**
-Start training models (SAC-L(CP), TD3, DDPG, or SAC):
+**Run Rviz to visualize information for different topics**
+Add Maker Array, Map, TF, and, Robot model (any other topics as you wish) 
 ```bash
-roslaunch turtlebot3_rl_sim start_sac_lagrangian_training.launch
-roslaunch turtlebot3_rl_sim start_ddpg_training.launch
-roslaunch turtlebot3_rl_sim start_td3_training.launch
-roslaunch turtlebot3_rl_sim start_sac_training.launch
+rviz -d /catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz/turtlebot3_gazebo_model.rviz
+```
+**Run Script for giving Commands**
+Example commands (Room Number ***, Navigate to Room Number ***, Go to (window, main entrance, or stairs*)
+For testing Voice-based commands run: for example
+```bash
+rosrun turtlebot3_gazebo voice_command.py
+```
+For testing Text-based command run:
+```bash
+rosrun turtlebot3_gazebo test_plan.py
 ```
 
 ## Setup Informations
