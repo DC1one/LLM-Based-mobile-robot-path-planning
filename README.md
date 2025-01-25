@@ -4,6 +4,7 @@ This repository contains the source code and resources for the research article 
 [**Link to the Article**]()  
 
 ---
+![Description of Image](https://github.com/DC1one/LLM-Based-mobile-robot-path-planning/blob/main/LLM%20MB_PP.png)
 
 ## Installation
 To set up the simulation environment:
