@@ -1,5 +1,5 @@
 # LLM-Based-mobile-robot-path-planning
-This repository contains the source code and resources for the research article **"Robust and Efficient Mobile Robot Navigation via LLM-Based Dynamic Waypoint Generation"** by Muhammad Taha Tariq, Congqing Wang, and Yasir Hussain, Submitted in [**(****)**]. This project involves using Large Language Models (LLM) for efficient mobile robot path planning. It integrates AI techniques for real-time navigation and decision-making in complex environments.
+This repository contains the source code and resources for the research article **"Robust and Efficient Mobile Robot Navigation via LLM-Based Dynamic Waypoint Generation"** by Muhammad Taha Tariq, Congqing Wang, and Yasir Hussain, Submitted in [**(Expert Systems with Applications)**] and preprint is available on [ArXiv](https://www.researchgate.net/publication/388412028_Robust_Mobile_Robot_Path_Planning_via_LLM-Based_Dynamic_Waypoint_Generation_A_R_T_I_C_L_E_I_N_F_O). This project involves using Large Language Models (LLM) for efficient mobile robot path planning. It integrates AI techniques for real-time navigation and decision-making in complex environments.
 
 [**Link to the Article**]()  
 
