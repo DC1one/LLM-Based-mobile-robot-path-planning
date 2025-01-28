@@ -1,7 +1,7 @@
 # LLM-Based-mobile-robot-path-planning
-This repository contains the source code and resources for the research article **"Robust and Efficient Mobile Robot Navigation via LLM-Based Dynamic Waypoint Generation"** by Muhammad Taha Tariq, Congqing Wang, and Yasir Hussain, Submitted in [**(Expert Systems with Applications)**] and preprint is available on [ArXiv](https://www.researchgate.net/publication/388412028_Robust_Mobile_Robot_Path_Planning_via_LLM-Based_Dynamic_Waypoint_Generation_A_R_T_I_C_L_E_I_N_F_O). This project involves using Large Language Models (LLM) for efficient mobile robot path planning. It integrates AI techniques for real-time navigation and decision-making in complex environments.
+This repository contains the source code and resources for the research article **"Robust and Efficient Mobile Robot Navigation via LLM-Based Dynamic Waypoint Generation"** by Muhammad Taha Tariq, Congqing Wang, and Yasir Hussain, Submitted in [**(Expert Systems with Applications)**] and a preprint is available on [ArXiv](https://arxiv.org/abs/2501.15901). This project involves using Large Language Models (LLM) for efficient mobile robot path planning. It integrates AI techniques for real-time navigation and decision-making in complex environments.
 
-[**Link to the Article**]()  
+[**Link to the Article**](https://arxiv.org/abs/2501.15901)  
 
 ---
 ![Description of Image](https://github.com/DC1one/LLM-Based-mobile-robot-path-planning/blob/main/LLM%20MB_PP.png)
@@ -72,5 +72,13 @@ Change the model name (qwen2.5, llama3.1, mathstral) in environment_** scripts i
 ## Citation:
 If you use this work, please cite it as:
 ```bash
-
+@misc{tariq2025robustmobilerobotpath,
+      title={Robust Mobile Robot Path Planning via LLM-Based Dynamic Waypoint Generation}, 
+      author={Muhammad Taha Tariq and Congqing Wang and Yasir Hussain},
+      year={2025},
+      eprint={2501.15901},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2501.15901}, 
+}
 ```
