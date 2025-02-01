@@ -72,13 +72,10 @@ Change the model name (qwen2.5, llama3.1, mathstral) in environment_** scripts i
 ## Citation:
 If you use this work, please cite it as:
 ```bash
-@misc{tariq2025robustmobilerobotpath,
-      title={Robust Mobile Robot Path Planning via LLM-Based Dynamic Waypoint Generation}, 
-      author={Muhammad Taha Tariq and Congqing Wang and Yasir Hussain},
-      year={2025},
-      eprint={2501.15901},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2501.15901}, 
+@article{tariq2025robust,
+  title={Robust Mobile Robot Path Planning via LLM-Based Dynamic Waypoint Generation},
+  author={Tariq, Muhammad Taha and Wang, Congqing and Hussain, Yasir},
+  journal={arXiv preprint arXiv:2501.15901},
+  year={2025}
 }
 ```
