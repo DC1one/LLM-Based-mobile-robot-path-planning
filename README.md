@@ -1,7 +1,7 @@
 # LLM-Based-mobile-robot-path-planning
-This repository contains the source code and resources for the research article **"Robust and Efficient Mobile Robot Navigation via LLM-Based Dynamic Waypoint Generation"** by Muhammad Taha Tariq, Congqing Wang, and Yasir Hussain, Submitted in [**(Expert Systems with Applications)**] and a preprint is available on [ArXiv](https://arxiv.org/abs/2501.15901). This project involves using Large Language Models (LLM) for efficient mobile robot path planning. It integrates AI techniques for real-time navigation and decision-making in complex environments.
+This repository contains the source code and resources for the research article **"Robust mobile robot path planning via LLM-based dynamic waypoint generation"** by Muhammad Taha Tariq, Congqing Wang, and Yasir Hussain, published in [**(Expert Systems with Applications)**](https://www.sciencedirect.com/science/article/abs/pii/S0957417425012229). This project involves using Large Language Models (LLM) for efficient mobile robot path planning. It integrates AI techniques for real-time navigation and decision-making in complex environments.
 
-[**Link to the Article**](https://arxiv.org/abs/2501.15901)  
+[**Link to the Article**](https://www.sciencedirect.com/science/article/abs/pii/S0957417425012229)  
 
 ---
 ![Description of Image](https://github.com/DC1one/LLM-Based-mobile-robot-path-planning/blob/main/LLM%20MB_PP.png)
@@ -70,12 +70,15 @@ Change the model name (qwen2.5, llama3.1, mathstral) in environment_** scripts i
 - **Gazebo**: 11.x
 
 ## Citation:
-If you use this work, please cite it as:
+If you find this work helpful, please cite it as:
 ```bash
 @article{tariq2025robust,
-  title={Robust Mobile Robot Path Planning via LLM-Based Dynamic Waypoint Generation},
-  author={Tariq, Muhammad Taha and Wang, Congqing and Hussain, Yasir},
-  journal={arXiv preprint arXiv:2501.15901},
-  year={2025}
+  title={Robust mobile robot path planning via LLM-based dynamic waypoint generation},
+  author={Tariq, Muhammad Taha and Hussain, Yasir and Wang, Congqing},
+  journal={Expert Systems with Applications},
+  volume={282},
+  pages={127600},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
