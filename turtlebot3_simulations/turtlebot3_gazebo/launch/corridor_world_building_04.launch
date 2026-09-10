@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Launch Gazebo with the Custom World -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/department.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <!-- Define Arguments for TurtleBot3 -->
+  <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="x" default="0.0" /> <!-- Adjust position as needed -->
+  <arg name="y" default="-3.0" />
+  <arg name="z" default="0.0" />
+  <arg name="roll" default="0.0"/>
+  <arg name="pitch" default="0.0"/>
+  <arg name="yaw" default="1.557343"/>
+
+  <!-- Load Robot Description -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+
+  <!-- Robot State Publisher -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher_corridor" />
+
+  <!-- Spawn TurtleBot3 in Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3_burger -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) -param robot_description" />
+
+   <!-- Static Transform Publisher: map -> odom -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom" />
+
+  <!-- Load and Publish the Map -->
+  <arg name="map_file" default="$(find turtlebot3_gazebo)/object_list/map_03.yaml" />
+  <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)" />
+
+
+
+
+</launch>

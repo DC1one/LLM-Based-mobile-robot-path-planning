@@ -1,0 +1,43 @@
+```
+# Compressed archives
+*.tar.gz
+
+# ROS2/Python build artifacts
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Dependencies
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Build directories (common in ROS projects)
+build/
+devel/
+install/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+```

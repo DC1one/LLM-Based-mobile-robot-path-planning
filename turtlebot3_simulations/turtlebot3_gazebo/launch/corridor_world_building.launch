@@ -1,0 +1,31 @@
+<launch>
+
+    <!-- Environment Data Provider -->
+    <node pkg="turtlebot3_gazebo" type="environment_data_provider_03.py" name="environment_data_provider" output="screen">
+        <param name="environment_yaml" value="department.yaml" />
+        <param name="package_path" value="$(find turtlebot3_gazebo)" />
+    </node>
+
+    <!-- LLM Path Planner -->
+    <node pkg="turtlebot3_gazebo" type="llm_path_planner.py" name="llm_path_planner" output="screen">
+        <param name="environment_yaml" value="department.yaml" />
+        <param name="environment_script" value="environment_03" />
+        <param name="package_path" value="$(find turtlebot3_gazebo)" />
+    </node>
+
+    <!-- Object Marker Publisher -->
+     <node pkg="turtlebot3_gazebo" type="object_marker_publisher.py" name="object_marker_publisher" output="screen">
+        <param name="environment_yaml" value="$(find turtlebot3_gazebo)/object_list/department.yaml" />
+    </node>
+
+    <!-- Waypoint Executor -->
+    <node pkg="turtlebot3_gazebo" type="waypoint_executor.py" name="waypoint_executor" output="screen">
+        <rosparam file="$(find turtlebot3_gazebo)/config/waypoint_executor_params.yaml" command="load" />
+        <param name="environment_yaml" value="$(find turtlebot3_gazebo)/object_list/department.yaml" />
+    </node>
+
+    <!-- Metrics Collector -->
+    <node pkg="turtlebot3_gazebo" type="metrics_collector.py" name="metrics_collector" output="screen">
+    </node>
+
+</launch>

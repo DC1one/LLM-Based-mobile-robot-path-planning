@@ -1,0 +1,39 @@
+corridor_length: 15  # Length of the corridor along the Y-axis in meters
+corridor_width: 4    # Width of the corridor along the X-axis in meters
+
+objects:
+  # Target Objects (Rooms and Window) - Only positions
+  - name: "Room_number_plate_101"
+    position: {x: 1.25, y: 2.63, z: 0.0}
+  - name: "Room_number_plate_102"
+    position: {x: -1.25, y: 2.63, z: 0.0}
+  - name: "Room_number_plate_103"
+    position: {x: 1.25, y: 5.36, z: 0.0}
+  - name: "Room_number_plate_104"
+    position: {x: -1.25, y: 5.36, z: 0.0}
+  - name: "Room_number_plate_105"
+    position: {x: 1.25, y: 7.86, z: 0.0}
+  - name: "Room_number_plate_106"
+    position: {x: -1.25, y: 7.86, z: 0.0}
+  - name: "Room_number_plate_107"
+    position: {x: 1.25, y: 10.24, z: 0.0}
+  - name: "Room_number_plate_108"
+    position: {x: -1.25, y: 10.24, z: 0.0}
+  - name: "Room_number_plate_109"
+    position: {x: 1.25, y: 12.91, z: 0.0}
+  - name: "Room_number_plate_110"
+    position: {x: -1.25, y: 12.91, z: 0.0}
+  - name: "Window"
+    position: {x: 0.0, y: 14.20, z: 0.0}
+
+  # Obstacles (Walls) - Positions and Sizes
+  - name: "Wall_Left"
+    position: {x: -2.0, y: 7.5, z: 0.0}
+    size: {width: 0.1, height: 3.0, length: 15.0}
+  - name: "Wall_Right"
+    position: {x: 2.0, y: 7.5, z: 0.0}
+    size: {width: 0.1, height: 3.0, length: 15.0}
+  - name: "Wall_Front"
+    position: {x: 0.0, y: 15.0, z: 0.0}
+    size: {width: 4.0, height: 3.0, length: 0.1}
+
